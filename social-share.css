@@ -1,0 +1,13 @@
+.ss-btn{
+	padding: 8px 12px;
+	background: #888;
+	color: #fff;
+	border-radius: 3px;
+	margin: 4px;
+}
+
+.ss-btn:hover{
+	text-decoration: none;
+	color: #fff;
+	transform: scaleX(2);
+}
