@@ -4,10 +4,12 @@
 	color: #fff;
 	border-radius: 3px;
 	margin: 4px;
+	display: inline-block;
+	transition: 0.2s ease transform;
 }
 
 .ss-btn:hover{
 	text-decoration: none;
 	color: #fff;
-	transform: scaleX(2);
+	transform: scale(1.1);
 }

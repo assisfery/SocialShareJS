@@ -35,6 +35,14 @@ SocialShare.btns = [
 		class: "ss-btn ss-btn-linkedin",
 		color: "#007bb5",
 	},
+	// {
+	// 	social: "messenger",
+	// 	link: "fb-messenger://share/?link=",
+	// 	iconClass: "fab fa-facebook-messenger",
+	// 	content: " Messenger",
+	// 	class: "ss-btn ss-btn-messenger",
+	// 	color: "#0078FF",
+	// },
 	{
 		social: "whatsapp",
 		link: "https://wa.me/?text=",
@@ -42,6 +50,14 @@ SocialShare.btns = [
 		content: " WhatsApp",
 		class: "ss-btn ss-btn-whatsapp",
 		color: "#25d366",
+	},
+	{
+		social: "viber",
+		link: "viber://forward?text=",
+		iconClass: "fab fa-viber",
+		content: " Viber",
+		class: "ss-btn ss-btn-viber",
+		color: "#665CAC",
 	},
 	{
 		social: "tumblr",
