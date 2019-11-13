@@ -35,6 +35,46 @@ SocialShare.btns = [
 		class: "ss-btn ss-btn-linkedin",
 		color: "#007bb5",
 	},
+	{
+		social: "whatsapp",
+		link: "https://wa.me/?text=",
+		iconClass: "fab fa-whatsapp",
+		content: " WhatsApp",
+		class: "ss-btn ss-btn-whatsapp",
+		color: "#25d366",
+	},
+	{
+		social: "tumblr",
+		link: "https://www.tumblr.com/share/link?url=",
+		iconClass: "fab fa-tumblr",
+		content: " Tumblr",
+		class: "ss-btn ss-btn-tumblr",
+		color: "#35465d",
+	},
+	{
+		social: "reddit",
+		link: "https://reddit.com/submit?url=",
+		iconClass: "fab fa-reddit",
+		content: " Reddit",
+		class: "ss-btn ss-btn-reddit",
+		color: "#ff4500",
+	},
+	{
+		social: "pocket",
+		link: "https://getpocket.com/save?url=",
+		iconClass: "fab fa-get-pocket",
+		content: " Pocket",
+		class: "ss-btn ss-btn-pocket",
+		color: "#ee4056",
+	},
+	{
+		social: "email",
+		link: "mailto:?body=",
+		iconClass: "fas fa-envelope",
+		content: " Email",
+		class: "ss-btn ss-btn-email",
+		color: "#17b7d9",
+	},
 ];
 
 // SETUP BUTTONS
