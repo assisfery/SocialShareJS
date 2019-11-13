@@ -1,11 +1,12 @@
 .ss-btn{
 	padding: 8px 12px;
 	background: #888;
-	color: #fff;
+	color: #fff !important;
 	border-radius: 3px;
 	margin: 4px;
 	display: inline-block;
 	transition: 0.2s ease transform;
+	cursor: pointer;
 }
 
 .ss-btn:hover{
