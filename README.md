@@ -13,7 +13,7 @@ Just include the  **social-share.css**  and  **social-share.js**  files.
 
 ```
 ### Dependences
-The  **SocialShareJS**  don't dependents of none library, but its uses the FontAwesome Fonts, so take shore you have include it in your web page.
+The  **SocialShareJS**  don't dependents of none library, but its uses the **FontAwesome 5** Fonts, so take shore you have include it in your web page.
 ```
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 ```

@@ -97,9 +97,17 @@ SocialShare.btns = [
 		iconClass: "fas fa-envelope",
 		content: " Email",
 		class: "ss-btn ss-btn-email",
-		color: "#17b7d9",
+		color: "#f04a43",
 	},
-	];
+	{
+		social: "sms",
+		link: "sms://?body=",
+		iconClass: "fas fa-sms",
+		content: " SMS",
+		class: "ss-btn ss-btn-sms",
+		color: "#1ba5e6",
+	},
+];
 
 // SETUP BUTTONS
 SocialShare.init = function(){
