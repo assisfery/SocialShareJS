@@ -35,3 +35,17 @@ For defaults the SocialShareJs put the atual page location as share link but you
 ```
 <div class="ss-box" data-ss-link="https://www.google.com/"></div>
 ```
+
+### Custom Query String
+In some of social network shares you could want to put a query string available just to specific social network, so to do that just include  
+**data-ss-_NAME_OF_SOCIAL_MEDIA_  = "key1:value1, key2:value2"** attribute,  
+  
+for example  
+  
+include **data-ss-messenger = "app_id:123456"**, so it will include the query string **&app_id=123456** in messenger share link, or  
+include **data-ss-email = "subject:SocialShareJS is amazing"**, it will include the query string **&subject=Email Subject** in  
+email share link.
+
+```
+<div class="ss-box" data-ss-social="messenger, pinterest, email" data-ss-messenger="app_id: 123456" data-ss-email="subject:SocialShareJS is amazing"></div>
+```

@@ -84,15 +84,25 @@
 		<br><br>
 		<h3>Custom Query String</h3>
 		<p>
-			In some of social network shares you could want to put a query string available just the social network,<br>
-			so to that just include <b>data-ss-<i>NAME_OF_SOCIAL_MEDIA</i> = "key1:value1, key2:value2"</b> attribute,<br> for example <br>
-			include <b>data-ss-messenger = "app_id:123456"</b>, so it will include the query string <b>&app_id=123456</b> in <br>
-			messenger share link.
+
+			In some of social network shares you could want to put a query string available just to specific social network,
+			so to do that just include <br><b>data-ss-<i>NAME_OF_SOCIAL_MEDIA</i> = "key1:value1, key2:value2"</b> attribute,
+
+			<br><br>for example<br><br>
+
+			include <b>data-ss-messenger = "app_id:123456"</b>, so it will include the query string <b>&app_id=123456</b> in
+			messenger share link, or <br>
+			include <b>data-ss-email = "subject:SocialShareJS is amazing"</b>, it will include the query string
+			<b>&subject=Email Subject</b> in <br>
+			email share link.
+
 		</p>
-		<div class="ss-box" data-ss-social="messenger, pinterest" data-ss-messenger="app_id: 123456">
+		<pre class="alert alert-secondary">&lt;div class="ss-box" data-ss-social="messenger, pinterest, email" data-ss-messenger="app_id: 123456" data-ss-email="subject:SocialShareJS is amazing"&gt;&lt;/div&gt;</pre>
+		<br>
+		<div class="ss-box" data-ss-social="messenger, pinterest, email" data-ss-messenger="app_id: 123456" data-ss-email="subject:SocialShareJS is amazing">
 			
 		</div>
-
+		
 		<br>
 		<div class="text-right text-muted">
 			<span>Made with ♥ by <a href="https://github.com/assisfery/" target="_blank">Assis Ferreira</a></span>

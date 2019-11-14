@@ -138,7 +138,7 @@ SocialShare.init = function(){
 					if(pairKeyValue.length > 1)
 					{
 						moreQueryString += moreQueryString == "" ? "" : "&";
-						moreQueryString += pairKeyValue[0].trim() + "=" + pairKeyValue[1].trim();
+						moreQueryString += pairKeyValue[0].trim() + "=" + encodeURIComponent(pairKeyValue[1].trim());
 					}
 				}
 			}
