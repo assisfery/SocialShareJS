@@ -73,11 +73,23 @@
 
 		<br><br>
 		<h3>Change Link</h3>
-		<p>For defaults the SocialShareJs put the atual page location as share link but you can change it just including the
+		<p>For defaults the SocialShareJs put the current page location as share link but you can change it just including the
 		<b>data-ss-link</b> attribute in your container.</p>
 		<pre class="alert alert-secondary">&lt;div class="ss-box" data-ss-link="https://www.google.com/"&gt;&lt;/div&gt;</pre>
 		<br>
 		<div class="ss-box" data-ss-link="https://www.google.com/">
+			
+		</div>
+
+		<br><br>
+		<h3>Custom Query String</h3>
+		<p>
+			In some of social network shares you could want to put a query string available just the social network,<br>
+			so to that just include <b>data-ss-<i>NAME_OF_SOCIAL_MEDIA</i> = "key1:value1, key2:value2"</b> attribute,<br> for example <br>
+			include <b>data-ss-messenger = "app_id:123456"</b>, so it will include the query string <b>&app_id=123456</b> in <br>
+			messenger share link.
+		</p>
+		<div class="ss-box" data-ss-social="messenger, pinterest" data-ss-messenger="app_id: 123456">
 			
 		</div>
 

@@ -3,54 +3,54 @@ var SocialShare = {};
 
 // BUTTONS
 SocialShare.btns = [
-{
-	social: "share",
-	link: "",
-	iconClass: "fas fa-share-alt",
-	content: " Share",
-	class: "ss-btn ss-btn-share",
-	color: "#888",
-},
-{
-	social: "facebook",
-	link: "https://www.facebook.com/sharer.php?u=",
-	iconClass: "fab fa-facebook-square",
-	content: " Facebook",
-	class: "ss-btn ss-btn-facebook",
-	color: "#3b5998",
-},
-{
-	social: "twitter",
-	link: "https://twitter.com/share?url=",
-	iconClass: "fab fa-twitter",
-	content: " Twitter",
-	class: "ss-btn ss-btn-twitter",
-	color: "#1da1f2",
-},
-{
-	social: "pinterest",
-	link: "https://pinterest.com/pin/create/bookmarklet/?url=",
-	iconClass: "fab fa-pinterest",
-	content: " Pinterest",
-	class: "ss-btn ss-btn-pinterest",
-	color: "#bd081c",
-},
-{
-	social: "linkedin",
-	link: "https://www.linkedin.com/shareArticle?url=",
-	iconClass: "fab fa-linkedin-in",
-	content: " LinkedIn",
-	class: "ss-btn ss-btn-linkedin",
-	color: "#007bb5",
-},
-	// {
-	// 	social: "messenger",
-	// 	link: "fb-messenger://share/?link=",
-	// 	iconClass: "fab fa-facebook-messenger",
-	// 	content: " Messenger",
-	// 	class: "ss-btn ss-btn-messenger",
-	// 	color: "#0078FF",
-	// },
+	{
+		social: "share",
+		link: "",
+		iconClass: "fas fa-share-alt",
+		content: " Share",
+		class: "ss-btn ss-btn-share",
+		color: "#888",
+	},
+	{
+		social: "facebook",
+		link: "https://www.facebook.com/sharer.php?u=",
+		iconClass: "fab fa-facebook-square",
+		content: " Facebook",
+		class: "ss-btn ss-btn-facebook",
+		color: "#3b5998",
+	},
+	{
+		social: "twitter",
+		link: "https://twitter.com/share?url=",
+		iconClass: "fab fa-twitter",
+		content: " Twitter",
+		class: "ss-btn ss-btn-twitter",
+		color: "#1da1f2",
+	},
+	{
+		social: "pinterest",
+		link: "https://pinterest.com/pin/create/bookmarklet/?url=",
+		iconClass: "fab fa-pinterest",
+		content: " Pinterest",
+		class: "ss-btn ss-btn-pinterest",
+		color: "#bd081c",
+	},
+	{
+		social: "linkedin",
+		link: "https://www.linkedin.com/shareArticle?url=",
+		iconClass: "fab fa-linkedin-in",
+		content: " LinkedIn",
+		class: "ss-btn ss-btn-linkedin",
+		color: "#007bb5",
+	},
+	{
+		social: "messenger",
+		link: "fb-messenger://share/?link=",
+		iconClass: "fab fa-facebook-messenger",
+		content: " Messenger",
+		class: "ss-btn ss-btn-messenger",
+		color: "#0078FF",
+	},
 	{
 		social: "whatsapp",
 		link: "https://wa.me/?text=",
@@ -117,16 +117,43 @@ SocialShare.init = function(){
 			var selectedSocial = SocialShare.boxs[i].getAttribute("data-ss-social");
 			var selectedLink = SocialShare.boxs[i].getAttribute("data-ss-link");
 
+			// GET LINK FROM CURRENT LOCATION
 			var link = window.location.href;
 
+			// VERIFY IF LINK IS SET IN ATTRIBUTE
 			if(selectedLink)
 				link = selectedLink;
+
+			// GET QUERY STRING FROM ATTRIBUTE
+			var moreQueryString = "";
+			
+			var selectedQueryString = SocialShare.boxs[i].getAttribute("data-ss-" + SocialShare.btns[j].social);
+
+			if(selectedQueryString)
+			{
+				var splitedQueryStrings = selectedQueryString.split(",");
+				for(var k = 0; k < splitedQueryStrings.length; k++)
+				{
+					var pairKeyValue = splitedQueryStrings[k].split(":");
+					if(pairKeyValue.length > 1)
+					{
+						moreQueryString += moreQueryString == "" ? "" : "&";
+						moreQueryString += pairKeyValue[0].trim() + "=" + pairKeyValue[1].trim();
+					}
+				}
+			}
+
+			if(moreQueryString != "")
+				moreQueryString = (SocialShare.btns[j].link.includes("?") ? "&" : "?") + moreQueryString;
+
+			// IF IS NOT SELECTED NONE SOCIAL NETWORK ITS INCLUDE ALL BY DEFAULT
+			// ELSE ITS VERIFY IF ITS BUTTON/SOCIAL NETWORK IS INCLUDED
 
 			if(!selectedSocial || selectedSocial.includes(SocialShare.btns[j].social))
 			{
 				var btn =  document.createElement("a");
 				btn.setAttribute("class", SocialShare.btns[j].class);
-				btn.setAttribute("href", SocialShare.btns[j].link + link);
+				btn.setAttribute("href", SocialShare.btns[j].link + encodeURIComponent(link) + moreQueryString);
 				btn.setAttribute("target", "_blank");
 				btn.style.background = SocialShare.btns[j].color;
 
