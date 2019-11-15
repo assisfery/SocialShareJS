@@ -68,6 +68,14 @@ SocialShare.btns = [
 		color: "#665CAC",
 	},
 	{
+		social: "telegram",
+		link: "tg://msg?text=",
+		iconClass: "fab fa-telegram",
+		content: " Telegram",
+		class: "ss-btn ss-btn-telegram",
+		color: "#0088CC",
+	},
+	{
 		social: "tumblr",
 		link: "https://www.tumblr.com/share/link?url=",
 		iconClass: "fab fa-tumblr",
