@@ -5,6 +5,10 @@ Its allow to include the social share link of the major social network to your p
 
 See the demo here: https://assisfery.github.io/SocialShareJS/index.html
 
+CDN repository: https://cdn.jsdelivr.net/gh/assisfery/SocialShareJS/
+
+[![](https://data.jsdelivr.com/v1/package/gh/assisfery/SocialShareJS/badge)](https://www.jsdelivr.com/package/gh/assisfery/SocialShareJS)
+
 ### Install
 Just include the  **social-share.css**  and  **social-share.js**  files.
 ```
