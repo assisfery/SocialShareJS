@@ -157,7 +157,7 @@ SocialShare.init = function(){
 			// IF IS NOT SELECTED NONE SOCIAL NETWORK ITS INCLUDE ALL BY DEFAULT
 			// ELSE ITS VERIFY IF ITS BUTTON/SOCIAL NETWORK IS INCLUDED
 
-			if(!selectedSocial || selectedSocial.includes(SocialShare.btns[j].social))
+			if(!selectedSocial || selectedSocial.toLowerCase().includes(SocialShare.btns[j].social))
 			{
 				var btn =  document.createElement("a");
 				btn.setAttribute("class", SocialShare.btns[j].class);
