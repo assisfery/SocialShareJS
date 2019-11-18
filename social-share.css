@@ -7,6 +7,7 @@
 	display: inline-block;
 	transition: 0.2s ease transform;
 	cursor: pointer;
+	text-align: center;
 }
 
 .ss-btn:hover{
@@ -14,4 +15,18 @@
 	color: #fff;
 	transform: scale(1.1);
 	filter: brightness(110%);
+}
+
+.ss-circle .ss-btn{
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+
+.ss-flat .ss-btn{
+	border-radius: 0;
+}
+
+.ss-shadow .ss-btn{
+    box-shadow: 0 0.5rem 1rem rgba(54, 54, 54, 0.28);
 }
