@@ -19,8 +19,7 @@
 
 .ss-circle .ss-btn{
 	border-radius: 50%;
-	width: 40px;
-	height: 40px;
+	min-width: 40px;
 }
 
 .ss-flat .ss-btn{
