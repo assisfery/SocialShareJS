@@ -79,3 +79,11 @@ If you want to put shadow in button just include the class  **ss-shadow**  in  *
 ```
 <div class="ss-box ss-shadow"></div>
 ```
+
+##### Just Move On...
+If you want to customize the share buttons like you want just do it adding css effect in your code.
+```
+.ss-btn{
+	/*your code*/
+}
+```
