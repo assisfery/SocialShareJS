@@ -167,6 +167,7 @@ SocialShare.init = function(){
 
 			if(!selectedSocial || selectedSocial.toLowerCase().includes(SocialShare.btns[j].social))
 			{
+				// CREATE BUTTON
 				var btn =  document.createElement("a");
 				btn.setAttribute("class", SocialShare.btns[j].class);
 				btn.setAttribute("href", SocialShare.btns[j].link + encodeURIComponent(link) + moreQueryString);
@@ -176,9 +177,22 @@ SocialShare.init = function(){
 				var icon =  document.createElement("i");
 				icon.setAttribute("class", SocialShare.btns[j].iconClass);
 
+				// APPEND ICON
 				btn.appendChild(icon);
-				btn.append(SocialShare.btns[j].content);
 
+				// SHOW BUTTON CONTENT/SOCAIL NETWORK NAME
+				var showContent = true;
+
+				var verifyIfShowContent = SocialShare.boxs[i].getAttribute("data-ss-content");
+
+				if(verifyIfShowContent && verifyIfShowContent == "false")
+					showContent = false;
+
+				// APPEND SOCIAL NAME
+				if(showContent)
+					btn.append(SocialShare.btns[j].content);
+
+				// APPEND THE CREATED BUTTON TO SOCIAL SHARE BOX AREA
 				SocialShare.boxs[i].appendChild(btn);
 			}
 
