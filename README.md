@@ -53,6 +53,14 @@ email share link.
 <div class="ss-box" data-ss-social="messenger, pinterest, email" data-ss-messenger="app_id: 123456" data-ss-email="subject:SocialShareJS is amazing"></div>
 ```
 
+### Responsive check
+Some of buttons (like: **share native** ,**messenger**, **viber** and **sms**) perhaps not work on desktop OS, but its works in mobile OS like Android and IOS, so may be necessary to show that buttons only in mobile screen.  
+  
+To solve that problem you could include the class **ss-responsive** on your container.
+```html
+<div class="ss-box ss-responsive"></div>
+```
+
 ### Customizations
 
 ##### Hide Social Network Name
