@@ -16,19 +16,44 @@
 	filter: brightness(110%);
 }
 
+/*CIRCLE BUTTON*/
+
 .ss-circle .ss-btn{
 	border-radius: 50%;
 	min-width: 40px;
 }
 
+/*FLAT BUTTON*/
+
 .ss-flat .ss-btn{
 	border-radius: 0;
 }
+
+/*SHADOW*/
 
 .ss-shadow .ss-btn{
     box-shadow: 0 0.5rem 1rem rgba(54, 54, 54, 0.28);
 }
 
+/*HOVER EFFECTS*/
+
+.ss-grow .ss-btn:hover{
+	transform: scale(1.1);
+}
+
+.ss-shrink .ss-btn:hover{
+	transform: scale(0.9);
+}
+
+.ss-rotate .ss-btn:hover{
+	transform: rotate(-10deg);
+}
+
+.ss-float .ss-btn:hover{
+	transform: translate(0px, -10px);
+}
+
+/*RESPONSIVE*/
 @media (min-width: 768px) {
 	.ss-responsive .ss-btn-share,
 	.ss-responsive .ss-btn-messenger,
