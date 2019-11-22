@@ -5,15 +5,14 @@
 	border-radius: 3px;
 	margin: 4px;
 	display: inline-block;
-	transition: 0.2s ease transform;
 	cursor: pointer;
 	text-align: center;
+	transition: 0.2s ease all;
 }
 
 .ss-btn:hover{
 	text-decoration: none;
-	color: #fff;
-	transform: scale(1.1);
+	color: #fff;	
 	filter: brightness(110%);
 }
 
