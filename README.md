@@ -12,17 +12,9 @@ CDN repository: https://www.jsdelivr.com/package/gh/assisfery/SocialShareJS
 ### Install
 Just include the  **social-share.css**  and  **social-share.js**  files.
 ```html
-<link rel="stylesheet" href="social-share.css">
-<script src="social-share.js"></script>
-```
-
-Those files are hosted on CDN JSDelivr.
-```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/assisfery/SocialShareJS@master/social-share.min.css">
 <script src="https://cdn.jsdelivr.net/gh/assisfery/SocialShareJS@master/social-share.min.js"></script>
 ```
-
-Or download them in: https://cdn.jsdelivr.net/gh/assisfery/SocialShareJS/
 
 ### Dependences
 The  **SocialShareJS**  don't dependents of none library, but its uses the **FontAwesome 5** Fonts, so make sure you have included it in your web page.
