@@ -94,6 +94,12 @@ If you want to put shadow in button just include the class  **ss-shadow**  in  *
 <div class="ss-box ss-shadow"></div>
 ```
 
+##### Hide Icons
+If you dont want to show the icons of Social Network just include **data-ss-icon** attribute with value **false**.
+```html
+<div class="ss-box" data-ss-icon="false"></div>
+```
+
 ### Hover Effects
 
 ##### Grow

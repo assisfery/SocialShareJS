@@ -174,11 +174,21 @@ SocialShare.init = function(){
 				btn.setAttribute("target", "_blank");
 				btn.style.background = SocialShare.btns[j].color;
 
+				// SHOW ICON
+				var showIcon = true;
+
 				var icon =  document.createElement("i");
 				icon.setAttribute("class", SocialShare.btns[j].iconClass);
 
+				// VERIFY IF SHOULD SHOW ICON
+				var verifyIfShowIcon = SocialShare.boxs[i].getAttribute("data-ss-icon");
+
+				if(verifyIfShowIcon && verifyIfShowIcon == "false")
+					showIcon = false;
+
 				// APPEND ICON
-				btn.appendChild(icon);
+				if(showIcon)
+					btn.appendChild(icon);
 
 				// SHOW BUTTON CONTENT/SOCAIL NETWORK NAME
 				var showContent = true;
