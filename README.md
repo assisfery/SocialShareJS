@@ -94,23 +94,28 @@ If you want to put shadow in button just include the class  **ss-shadow**  in  *
 <div class="ss-box ss-shadow"></div>
 ```
 
-##### Hover Effects
-Grow when the mouse is hover.
+### Hover Effects
+
+##### Grow
+Include **ss-grow** in your container to make button grow when the mouse is hover.
 ```html
 <div class="ss-box ss-grow" data-ss-social="facebook"></div>
 ```
 
-Shrink when the mouse is hover.
+##### Shrink
+Include **ss-shrink** in your container to make button shrink when the mouse is hover.
 ```html
 <div class="ss-box ss-shrink" data-ss-social="facebook"></div>
 ```
 
-Rotate when the mouse is hover.
+##### Rotate
+Include **ss-rotate** in your container to make button rotate when the mouse is hover.
 ```html
 <div class="ss-box ss-rotate" data-ss-social="facebook"></div>
 ```
 
-Float when the mouse is hover.
+##### Float
+Include **ss-float** in your container to make button float when the mouse is hover.
 ```html
 <div class="ss-box ss-float" data-ss-social="facebook"></div>
 ```
