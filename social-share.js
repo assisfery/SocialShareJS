@@ -174,13 +174,38 @@ SocialShare.init = function(){
 				btn.setAttribute("target", "_blank");
 				btn.style.background = SocialShare.btns[j].color;
 
-				// SHOW ICON
-				var showIcon = true;
+				// SOCIAL NETWORK ICON
+				var iconClass = SocialShare.btns[j].iconClass;
+
+				// VERIFY IF ICONS IS CHANGED
+				var definedIcons = SocialShare.boxs[i].getAttribute("data-ss-icon-class");
+
+				if(definedIcons)
+				{
+					var splitedIcons = definedIcons.split(",");
+
+					for(var l = 0; l < splitedIcons.length; l++)
+					{
+						var pairKeyValue = splitedIcons[l].split(":");
+
+						if(pairKeyValue.length > 1)
+						{
+							if(pairKeyValue[0].trim().toLowerCase() == SocialShare.btns[j].social)
+							{
+								iconClass = pairKeyValue[1].trim();
+							}
+						}
+
+					}
+
+				}
 
 				var icon =  document.createElement("i");
-				icon.setAttribute("class", SocialShare.btns[j].iconClass);
+				icon.setAttribute("class", iconClass);
 
 				// VERIFY IF SHOULD SHOW ICON
+				var showIcon = true;
+
 				var verifyIfShowIcon = SocialShare.boxs[i].getAttribute("data-ss-icon");
 
 				if(verifyIfShowIcon && verifyIfShowIcon == "false")

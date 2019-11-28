@@ -42,7 +42,7 @@ For defaults the SocialShareJs put the atual page location as share link but you
 
 ### Custom Query String
 In some of social network shares you could want to put a query string available just to specific social network, so to do that just include  
-**data-ss-_NAME_OF_SOCIAL_MEDIA_  = "key1:value1, key2:value2"** attribute,  
+**data-ss-_NAME_OF_SOCIAL_MEDIA = "key1:value1, key2:value2"** attribute,  
   
 for example  
   
@@ -98,6 +98,16 @@ If you want to put shadow in button just include the class  **ss-shadow**  in  *
 If you dont want to show the icons of Social Network just include **data-ss-icon** attribute with value **false**.
 ```html
 <div class="ss-box" data-ss-icon="false"></div>
+```
+
+##### Change Icons
+If you want to change the icon class of any Social Network to another icon of you preference or icon of others packages just include the **data-ss-icon-class** with value **social_name1: icon_class1, social_name2: iconclass2**
+
+for example:
+
+include **data-ss-icon-class="facebook:fab fa-facebook-messenger,email:fas fa-sms"** so it will put the icon **fab fa-facebook-messenger** instead the facebook default icon and it will put the icon **fas fa-sms** instead the email default icon.
+```html
+<div class="ss-box" data-ss-social="facebook, email" data-ss-icon-class="facebook:fab fa-facebook-messenger,email:fas fa-sms"></div>
 ```
 
 ### Hover Effects

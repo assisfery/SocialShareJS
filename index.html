@@ -164,12 +164,31 @@
 		<br>
 		<div class="ss-box ss-shadow"></div>
 
-		<br>
+		<br><br>
 		<h5>Hide Icons</h5>
 		<p>If you dont want to show the icons of Social Network just include <b>data-ss-icon</b> attribute with value <b>false</b>.</p>		
 		<pre class="alert alert-secondary">&lt;div class="ss-box" data-ss-icon="false"&gt;&lt;/div&gt;</pre>
 		<br>
 		<div class="ss-box" data-ss-icon="false"></div>
+
+		<br><br>
+		<h5>Change Icons</h5>
+		<p>
+			If you want to change the icon class of any Social Network to another icon of you
+			preference or icon of others packages just include the <b>data-ss-icon-class</b>
+			with value <b>social_name1: icon_class1, social_name2: iconclass2</b>
+			<br><br>
+			for example:
+			<br><br>
+			include <b>data-ss-icon-class="facebook:fab fa-facebook-messenger,email:fas fa-sms"</b> so
+			it will put the icon <b>fab fa-facebook-messenger</b> instead the facebook default icon and it will
+			put the icon <b>fas fa-sms</b> instead the email default icon.
+
+		</p>		
+		<pre class="alert alert-secondary">&lt;div class="ss-box" data-ss-social="facebook, email" data-ss-icon-class="facebook:fab fa-facebook-messenger,email:fas fa-sms"&gt;&lt;/div&gt;</pre>
+		<br>
+		<div class="ss-box" data-ss-social="facebook, email" data-ss-icon-class="facebook:fab fa-facebook-messenger,email:fas fa-sms">	
+		</div>
 
 		<br><br>
 		<h3>Hover Effects</h3>
