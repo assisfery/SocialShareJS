@@ -83,7 +83,7 @@ If you want to make button without rounded border just include the class  **ss-f
 ```
 
 ##### Pill buttons
-If you want to make button with pill shape effect just include the class ss-pill in ss-box container.
+If you want to make button with pill shape effect just include the class **ss-pill** in **ss-box** container.
 ```html
 <div class="ss-box ss-pill"></div>
 ```
