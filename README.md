@@ -82,10 +82,37 @@ If you want to make button without rounded border just include the class  **ss-f
 <div class="ss-box ss-flat"></div>
 ```
 
+##### Pill buttons
+If you want to make button with pill shape effect just include the class ss-pill in ss-box container.
+```html
+<div class="ss-box ss-pill"></div>
+```
+
 ##### Button with Shadows
 If you want to put shadow in button just include the class  **ss-shadow**  in  **ss-box**  container.
 ```html
 <div class="ss-box ss-shadow"></div>
+```
+
+##### Hover Effects
+Grow when the mouse is hover.
+```html
+<div class="ss-box ss-grow" data-ss-social="facebook"></div>
+```
+
+Shrink when the mouse is hover.
+```html
+<div class="ss-box ss-shrink" data-ss-social="facebook"></div>
+```
+
+Rotate when the mouse is hover.
+```html
+<div class="ss-box ss-rotate" data-ss-social="facebook"></div>
+```
+
+Float when the mouse is hover.
+```html
+<div class="ss-box ss-float" data-ss-social="facebook"></div>
 ```
 
 ##### Just Move On...
