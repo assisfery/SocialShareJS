@@ -218,6 +218,25 @@
 		<div class="ss-box ss-float" data-ss-social="facebook"></div>
 
 		<br><br>
+		<h5>JavaScript Utils</h5>
+		<p>If you want to create a share box in JavaScript you can use the follow function.</p>
+		<pre class="alert alert-secondary">SocialShare.createShareBox(_elements, _link = null, _socials =  null, _showIcon = true, _showContent = true, _clearContainer = true);</pre>
+
+		<ul>
+			<li><b>_elements</b> - the dom elements where the socials buttons will be created</li>
+			<li><b>_link</b> - the link/content will be shared, by default will be the current window location</li>
+			<li><b>_showIcon</b> - the social button icon will be presented or not</li>
+			<li><b>_showContent</b> - the social button name/label will be presented or not</li>
+			<li><b>_clearContainer</b> - clear or not the elements before create  the buttons</li>
+		</ul>
+
+		<p>For example</p>
+		<pre class="alert alert-secondary">SocialShare.createShareBox("#newShareBox", "https://github.com/assisfery/SocialShareJS", "facebook, twitter, email, sms, viber");</pre>
+
+		<button type="button" class="btn btn-primary" onclick="createNewShareBox()">Create Share Box</button>
+		<div id="newShareBox"></div>
+
+		<br><br>
 		<h5>Just Move On...</h5>
 		<p>If you want to customize the share buttons like you want just do it adding css effect in your code.</p>
 		<pre class="alert alert-secondary">.ss-btn{
@@ -228,6 +247,18 @@
 		<div class="text-right text-muted">
 			<span>Made with ♥ by <a href="https://github.com/assisfery/" target="_blank">Assis Ferreira</a></span>
 		</div>
+
+		<script>			
+
+			function createNewShareBox(){
+				// SocialShare.createShareBox("#newShareBox", _link = null, _socials =  null, _showIcon = true, _showContent = true, _clearContainer = true);
+
+				// SocialShare.createShareBox("#newShareBox", null, null, true, true, true);
+
+				SocialShare.createShareBox("#newShareBox", "https://github.com/assisfery/SocialShareJS", "facebook, twitter, email, sms, viber");
+			}
+
+		</script>
 
 	</div>
 

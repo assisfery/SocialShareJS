@@ -118,10 +118,10 @@ SocialShare.btns = [
 ];
 
 // SETUP BUTTONS
-SocialShare.init = function(){
+SocialShare.init = function(_elements){
 
 	// GET SHARE BOXS
-	SocialShare.boxs = document.querySelectorAll(".ss-box");
+	SocialShare.boxs = document.querySelectorAll(_elements);
 
 	// SETUP SHARE BOXS
 	for(var i = 0; i < SocialShare.boxs.length; i++)
@@ -268,6 +268,39 @@ SocialShare.init = function(){
 
 }
 
+// SETUP FUNCTION DIRECTLY IN JS
+SocialShare.createShareBox = function(_elements, _link = null, _socials =  null, _showIcon = true, _showContent = true, _clearContainer = true) {
+
+	// GET SHARE BOXS
+	var newBoxs = document.querySelectorAll(_elements);
+
+	// SETUP SHARE BOXS
+	for(var i = 0; i < newBoxs.length; i++)
+	{
+		if(!newBoxs[i].classList.contains("ss-box"))
+			newBoxs[i].classList.add("ss-box");
+
+		if(_link)
+			newBoxs[i].setAttribute("data-ss-link", _link);
+
+		if(_socials)
+			newBoxs[i].setAttribute("data-ss-social", _socials);
+
+		if(!_showIcon)
+			newBoxs[i].setAttribute("data-ss-icon", _showIcon);
+
+		if(!_showContent)
+			newBoxs[i].setAttribute("data-ss-content", _showContent);
+
+		if(_clearContainer)
+			newBoxs[i].innerHTML = "";
+	}
+
+	SocialShare.init(_elements);
+}
+
+
+// ONLOAD
 window.addEventListener('load', function() {
-	SocialShare.init();
+	SocialShare.init(".ss-box");
 });

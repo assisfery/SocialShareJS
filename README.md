@@ -136,6 +136,24 @@ Include **ss-float** in your container to make button float when the mouse is ho
 <div class="ss-box ss-float" data-ss-social="facebook"></div>
 ```
 
+##### JavaScript Utils
+
+If you want to create a share box in JavaScript you can use the follow function.
+```
+SocialShare.createShareBox(_elements, _link = null, _socials =  null, _showIcon = true, _showContent = true, _clearContainer = true);
+```
+
+-   **_elements**  - the dom elements where the socials buttons will be created
+-   **_link**  - the link/content will be shared, by default will be the current window location
+-   **_showIcon**  - the social button icon will be presented or not
+-   **_showContent**  - the social button name/label will be presented or not
+-   **_clearContainer**  - clear or not the elements before create the buttons
+
+For example
+```
+SocialShare.createShareBox("#newShareBox", "https://github.com/assisfery/SocialShareJS", "facebook, twitter, email, sms, viber");
+```
+
 ##### Just Move On...
 If you want to customize the share buttons like you want just do it adding css effect in your code.
 ```css
