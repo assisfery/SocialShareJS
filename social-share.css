@@ -16,6 +16,24 @@
 	filter: brightness(110%);
 }
 
+.ss-black .ss-btn{
+	background: #000 !important;
+}
+
+.ss-dark .ss-btn{
+	background: #444 !important;
+}
+
+.ss-gray .ss-btn{
+	background: #888 !important;
+	color: #000 !important;
+}
+
+.ss-light .ss-btn{
+	background: #ddd !important;
+	color: #444 !important;
+}
+
 /*CIRCLE BUTTON*/
 
 .ss-circle .ss-btn{

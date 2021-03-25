@@ -9,7 +9,7 @@ SocialShare.btns = [
 		iconClass: "fas fa-share-alt",
 		content: " Share",
 		class: "ss-btn ss-btn-share",
-		color: "#888",
+		color: "#444",
 	},
 	{
 		social: "facebook",
