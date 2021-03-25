@@ -16,6 +16,7 @@
 	filter: brightness(110%);
 }
 
+/*UNICOLOR*/
 .ss-black .ss-btn{
 	background: #000 !important;
 }
@@ -74,6 +75,20 @@
 
 .ss-float .ss-btn:hover{
 	transform: translate(0px, -10px);
+}
+
+/*STRAIT*/
+
+.ss-strait .ss-btn{
+	margin:0;
+	border-radius: 0;
+}
+
+.ss-strait{
+	border-radius: 3px;
+	overflow: hidden;
+	display: table;
+	margin: 0 auto;
 }
 
 /*RESPONSIVE*/
