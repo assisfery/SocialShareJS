@@ -12,8 +12,8 @@ CDN repository: https://www.jsdelivr.com/package/gh/assisfery/SocialShareJS
 ### Install
 Just include the  **social-share.css**  and  **social-share.js**  files.
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/assisfery/SocialShareJS@1.2/social-share.min.css">
-<script src="https://cdn.jsdelivr.net/gh/assisfery/SocialShareJS@1.2/social-share.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/assisfery/SocialShareJS@1.3/social-share.min.css">
+<script src="https://cdn.jsdelivr.net/gh/assisfery/SocialShareJS@1.3/social-share.min.js"></script>
 ```
 
 ### Dependences
