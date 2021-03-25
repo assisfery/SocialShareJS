@@ -239,7 +239,7 @@ SocialShare.init = function(_elements){
 	SocialShare.btnShares = document.querySelectorAll(".ss-btn-share");
 	for(var i = 0; i < SocialShare.btnShares.length; i++)
 	{
-		var link = SocialShare.btnShares[i].getAttribute("href");
+		var link = decodeURIComponent(SocialShare.btnShares[i].getAttribute("href"));
 
 		SocialShare.btnShares[i].removeAttribute("href");
 		SocialShare.btnShares[i].removeAttribute("target");
