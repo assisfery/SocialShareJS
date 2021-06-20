@@ -35,6 +35,12 @@
 	color: #444 !important;
 }
 
+.ss-outline .ss-btn{
+	background: #fff !important;
+	color: #444 !important;
+	border: 1px solid #bbb !important;
+}
+
 /*CIRCLE BUTTON*/
 
 .ss-circle .ss-btn{
