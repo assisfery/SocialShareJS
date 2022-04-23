@@ -19,7 +19,8 @@ Just include the  **social-share.css**  and  **social-share.js**  files.
 ### Dependences
 The  **SocialShareJS**  don't dependents of none library, but its uses the **FontAwesome 5** Fonts, so make sure you have included it in your web page.
 ```html
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 ```
 
 ### Get Started
